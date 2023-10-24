@@ -16,14 +16,14 @@ public class User {
     private long id;
 
     @Column(name = "name",nullable = false)
-    @NotEmpty
+    @NotEmpty(message = "name message")
     @Size(min = 2,message = "user name should have at least 2 characters")
     private String name;
-    @NotEmpty
+    @NotEmpty(message = "Email message")
     @Email
     private String email;
 
-    @NotEmpty
+    @NotEmpty(message = "password massage")
     @Size(min = 8,max = 20,message = "password could have between 8 and 20 characters")
     private String password;
 
