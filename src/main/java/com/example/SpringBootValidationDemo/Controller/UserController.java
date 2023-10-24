@@ -24,6 +24,10 @@ public class UserController {
         return new ResponseEntity<>(user1, HttpStatus.CREATED);
     }
 
+    public ResponseEntity<User> getUserById(long id){
+       return new ResponseEntity<>(userService.getUserById(id),HttpStatus.OK);
+    }
+
 
 
 
