@@ -13,7 +13,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.HashMap;
 import java.util.Map;
 
-Explain the code below:
 @ControllerAdvice
 public class ValidationHandler extends ResponseEntityExceptionHandler {
     @Override
