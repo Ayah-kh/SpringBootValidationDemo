@@ -14,6 +14,7 @@ public class UserClass {
         user2.setPassword("5555555");
 
         System.out.println("user = " + user);
+        System.out.println("user.equals(user2) = " + user.equals(user2));
 
 
     }
